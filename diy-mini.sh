@@ -20,7 +20,11 @@ function git_sparse_clone() {
 # xunlei
 # git clone --depth 1 --branch v3.11.2-32 https://github.com/0x676e67/thunder.git package/xunlei
 git clone --depth 1 https://github.com/animegasan/luci-app-quickstart package/luci-app-quickstart
-
+# passwall
+#git clone --depth 1 --branch main https://github.com/xiaorouji/openwrt-passwall-packages.git 
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
 # 修改版本为编译日期
 date_version=$(date +"%y.%m.%d")
